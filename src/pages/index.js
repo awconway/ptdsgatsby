@@ -9,6 +9,8 @@ import Pin from "../components/pin"
 
 import Img from "gatsby-image"
 
+import { graphql } from "gatsby"
+
 export const query = graphql`
   query {
     file(relativePath: { eq: "clarity-plot.png" }) {
