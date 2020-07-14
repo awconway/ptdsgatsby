@@ -17,7 +17,7 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 
 // font awesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 //scrollTrigger components
 import Reveal from "../components/reveal"
@@ -84,10 +84,10 @@ const IndexPage = ({ data }) => (
               </tr>
               <tr>
                 <td>
-                  <FontAwesomeIcon icon={["fad", "sandwich"]} size="10x" />
+                  {/* <FontAwesomeIcon icon={["fad", "sandwich"]} size="10x" /> */}
                 </td>
                 <td>
-                  <FontAwesomeIcon icon={["fad", "glass"]} size="10x" />
+                  {/* <FontAwesomeIcon icon={["fad", "glass"]} size="10x" /> */}
                 </td>
               </tr>
             </table>
@@ -102,7 +102,7 @@ const IndexPage = ({ data }) => (
       <Reveal>
         <Row className="align-items-center">
           <Col lg={3} className="mx-auto text-center">
-            <FontAwesomeIcon icon={["fad", "clock"]} size="10x" />
+            {/* <FontAwesomeIcon icon={["fad", "clock"]} size="10x" /> */}
           </Col>
           <Col lg={9} className="mx-auto text-center">
             <h1>
@@ -201,7 +201,7 @@ const IndexPage = ({ data }) => (
             </em>
           </Col>
           <Col lg={4} className="mx-auto text-center">
-            <FontAwesomeIcon icon={["fad", "glass"]} size="10x" />
+            {/* <FontAwesomeIcon icon={["fad", "glass"]} size="10x" /> */}
           </Col>
         </Row>
       </Reveal>

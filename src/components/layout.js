@@ -12,13 +12,13 @@ import { Container, Row, Col } from "react-bootstrap"
 
 import Header from "./header"
 import Navbar from "./navBar"
-import "@fortawesome/fontawesome-svg-core/styles.css"
+// import "@fortawesome/fontawesome-svg-core/styles.css"
 
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { fad } from "@fortawesome/pro-duotone-svg-icons"
-import { faGlass, faSandwich, faClock } from "@fortawesome/pro-solid-svg-icons"
+// import { library } from "@fortawesome/fontawesome-svg-core"
+// import { fad } from "@fortawesome/pro-duotone-svg-icons"
+// import { faGlass, faSandwich, faClock } from "@fortawesome/pro-solid-svg-icons"
 
-library.add(fad, faGlass, faSandwich, faClock)
+// library.add(fad, faGlass, faSandwich, faClock)
 
 const Layout = ({ children, pageInfo }) => (
   <StaticQuery
