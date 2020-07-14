@@ -1,4 +1,5 @@
 import React from "react"
+
 import {
   Row,
   Col,
@@ -7,18 +8,20 @@ import {
   OverlayTrigger,
   Tooltip,
 } from "react-bootstrap"
+import { graphql, Link } from "gatsby"
+
+//Page components
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-import Reveal from "../components/reveal"
-import Pin from "../components/pin"
-
 import Img from "gatsby-image"
 
+// font awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { graphql, Link } from "gatsby"
+//scrollTrigger components
+import Reveal from "../components/reveal"
+import Pin from "../components/pin"
 
 export const query = graphql`
   query {

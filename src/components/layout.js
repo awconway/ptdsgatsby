@@ -12,6 +12,7 @@ import { Container, Row, Col } from "react-bootstrap"
 
 import Header from "./header"
 import Navbar from "./navBar"
+import "@fortawesome/fontawesome-svg-core/styles.css"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fad } from "@fortawesome/pro-duotone-svg-icons"
