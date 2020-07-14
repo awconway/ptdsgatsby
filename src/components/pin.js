@@ -15,10 +15,12 @@ const Pin = ({ children }) => {
   useEffect(() => {
     ScrollTrigger.create({
       trigger: pinRef.current,
-      start: "top top+=15%",
+      // start: "top top+=15%",
+      start: "center center",
+
       end: "bottom 150px",
       pin: pinRef.current,
-      pinSpacing: true,
+      // pinSpacing: true,
       // markers: true,
     })
   }, [])
