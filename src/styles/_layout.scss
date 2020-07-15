@@ -43,6 +43,8 @@ a.link-no-style {
 
 header {
   background-color: $color-primary;
+  color: $body-bg;
+
   /* Set a specific height */
   height: 400px;
   display: flex;
@@ -51,4 +53,24 @@ header {
   align-items: center;
   line-height: 3em;
   padding: 3em;
+}
+
+.section {
+  background-color: $color-primary;
+  color: $body-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 3em;
+  padding: 3em;
+  height: 300px;
+}
+
+.deviationimg {
+  width: 800px;
+  height: auto;
+  // max-width: 100%;
+  // margin: 0 auto 6rem;
+  // display: block;
 }

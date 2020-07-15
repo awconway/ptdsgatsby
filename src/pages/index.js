@@ -14,10 +14,12 @@ import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
 import Img from "gatsby-image"
+import Deviationimg from "../../static/fasting-deviation-plot.svg"
 
 // font awesome
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 //scrollTrigger components
 import Reveal from "../components/reveal"
@@ -39,7 +41,7 @@ const IndexPage = ({ data }) => (
   <Layout pageInfo={{ pageName: "index" }}>
     <SEO title="Home" keywords={[`fasting`, `sedation`, `anesthesia`]} />
     <Container className="mx-auto">
-      <Row>
+      <Row className="py-5">
         <Col>
           <table borderless className="font-weight-light text-sm">
             <tr>
@@ -71,7 +73,7 @@ const IndexPage = ({ data }) => (
         </Col>
       </Row>
       <Reveal>
-        <Row>
+        <Row className="py-5">
           <Col>
             <table borderless className="mx-auto text-center">
               <tr>
@@ -84,10 +86,10 @@ const IndexPage = ({ data }) => (
               </tr>
               <tr>
                 <td>
-                  {/* <FontAwesomeIcon icon={["fad", "sandwich"]} size="10x" /> */}
+                  <FontAwesomeIcon icon={["fad", "sandwich"]} size="10x" />
                 </td>
                 <td>
-                  {/* <FontAwesomeIcon icon={["fad", "glass"]} size="10x" /> */}
+                  <FontAwesomeIcon icon={["fad", "glass"]} size="10x" />
                 </td>
               </tr>
             </table>
@@ -100,9 +102,9 @@ const IndexPage = ({ data }) => (
         </Row>
       </Reveal>
       <Reveal>
-        <Row className="align-items-center">
+        <Row className="align-items-center py-5">
           <Col lg={3} className="mx-auto text-center">
-            {/* <FontAwesomeIcon icon={["fad", "clock"]} size="10x" /> */}
+            <FontAwesomeIcon icon={["fad", "clock"]} size="10x" />
           </Col>
           <Col lg={9} className="mx-auto text-center">
             <h1>
@@ -201,7 +203,7 @@ const IndexPage = ({ data }) => (
             </em>
           </Col>
           <Col lg={4} className="mx-auto text-center">
-            {/* <FontAwesomeIcon icon={["fad", "glass"]} size="10x" /> */}
+            <FontAwesomeIcon icon={["fad", "glass"]} size="10x" />
           </Col>
         </Row>
       </Reveal>
@@ -223,7 +225,123 @@ const IndexPage = ({ data }) => (
           </h1>
         </Row>
       </Reveal>
-      <Row>
+    </Container>
+    <Reveal>
+      <Container fluid className="pb-5">
+        <Row className="align-items-center">
+          <Col className="section mx-auto text-center">
+            <h1>Methods</h1>
+            <FontAwesomeIcon icon={["fad", "tools"]} size="10x" />
+          </Col>
+        </Row>
+      </Container>
+    </Reveal>
+    <Container>
+      <Reveal>
+        <Row className="pt-5">
+          <h2>
+            From November 2019 to March 2020, we recruited 193 patients for the
+            study.
+          </h2>
+        </Row>
+      </Reveal>
+      <Reveal>
+        <Row className="pt-5">
+          <h2>
+            A summary of participant characteristics is displayed in the Table
+            below
+          </h2>
+        </Row>
+      </Reveal>
+    </Container>
+    <Reveal>
+      <Container fluid className="pb-5">
+        <Row className="align-items-center">
+          <Col className="section mx-auto text-center">
+            <h1>Fasting duration</h1>
+            <FontAwesomeIcon icon={["fad", "tools"]} size="10x" />
+          </Col>
+        </Row>
+      </Container>
+    </Reveal>
+    <Container className="pb-5">
+      <Reveal>
+        <Row className="mx-auto">
+          <Deviationimg className="deviationimg" />
+        </Row>
+      </Reveal>
+    </Container>
+    <Container>
+      <Reveal>
+        <Row className="pt-5">
+          <h2>
+            A prospective, observational design was used. No changes to usual
+            clinical practice were made for this study in regard to
+            pre-procedure fasting.
+          </h2>
+        </Row>
+      </Reveal>
+      <Reveal>
+        <Row className="pt-5">
+          <h2>
+            Adult patients who were fasted and scheduled for an elective
+            procedure in the Cardiac Catheterization Laboratories or in
+            Interventional Radiology were included.
+          </h2>
+        </Row>
+      </Reveal>
+      <Reveal>
+        <Row className="pt-5">
+          <h2>
+            Adult patients who were fasted and scheduled for an elective
+            procedure in the Cardiac Catheterization Laboratories or in
+            Interventional Radiology were included.
+          </h2>
+        </Row>
+      </Reveal>
+      <Reveal>
+        <Row className="pt-5">
+          <Col className="mx-auto text-center">
+            <h2>Exclusion criteria</h2>
+            <ListGroup>
+              <ListGroup.Item>Under 16 years of age</ListGroup.Item>
+              <ListGroup.Item>Undergoing an emergency procedure</ListGroup.Item>
+              <ListGroup.Item>
+                Unable to understand or speak English and a translator is not
+                immediately available
+              </ListGroup.Item>
+              <ListGroup.Item>
+                Nurse in pre-procedural bay considered that there was
+                insufficient time prior to anticipated commencement of the
+                procedure for participation in the study.
+              </ListGroup.Item>
+            </ListGroup>
+          </Col>
+        </Row>
+      </Reveal>
+      <Reveal>
+        <Row className="pt-5">
+          <Col className="mx-auto text-center">
+            <p>
+              Participants rated the severity of their thirst discomfort by
+              rating how 'bothered' they were by the following sensations:
+            </p>
+
+            <ListGroup>
+              <ListGroup.Item>I want to drink water</ListGroup.Item>
+              <ListGroup.Item>My mouth is dry</ListGroup.Item>
+              <ListGroup.Item>My lips are dry</ListGroup.Item>
+              <ListGroup.Item>My saliva is thick</ListGroup.Item>
+              <ListGroup.Item>My tongue is thick </ListGroup.Item>
+            </ListGroup>
+            <p>
+              Possible responses were 0 = 'not bothered', 1 = 'slightly
+              bothered', and 3 = 'very bothered'.
+            </p>
+          </Col>
+        </Row>
+      </Reveal>
+      <Row className="pt-5">
         <Reveal>
           <Pin>
             <Col>
