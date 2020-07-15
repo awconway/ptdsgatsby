@@ -16,7 +16,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import Img from "gatsby-image"
-import Deviationimg from "../../static/fasting-deviation-plot.svg"
 
 // font awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -34,12 +33,28 @@ export const query = graphql`
         }
       }
     }
+    fastingDeviationPlot: file(
+      relativePath: { eq: "fasting-deviation-plot-1200w-1500-h.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1140) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
 const IndexPage = ({ data }) => (
   <Layout pageInfo={{ pageName: "index" }}>
     <SEO title="Home" keywords={[`fasting`, `sedation`, `anesthesia`]} />
+    <Container className="mx-auto">
+      <Row className="py-5">
+        <Col>
+          <Img fluid={data.fastingDeviationPlot.childImageSharp.fluid} alt="" />
+        </Col>
+      </Row>
+    </Container>
     <Container className="mx-auto">
       <Row className="py-5">
         <Col>
@@ -264,13 +279,6 @@ const IndexPage = ({ data }) => (
         </Row>
       </Container>
     </Reveal>
-    <Container className="pb-5">
-      <Reveal>
-        <Row className="mx-auto">
-          <Deviationimg className="deviationimg" />
-        </Row>
-      </Reveal>
-    </Container>
     <Container>
       <Reveal>
         <Row className="pt-5">
