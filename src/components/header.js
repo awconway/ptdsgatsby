@@ -1,20 +1,37 @@
-import { Link } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-// import { Row, Col, Container } from "react-bootstrap"
+import Img from "gatsby-image"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ data, siteTitle }) => (
   <header>
     <Link to="https://www.uhn.ca/PMCC">
-      <img
-        src="https://raw.githubusercontent.com/awconway/awconway.github.io/master/images/pmcc_logo.png"
-        alt="PMCC logo"
-      />
+      <Img fixed={data.pmcc.childImageSharp.fixed} />
     </Link>
-    <em className="text-light">Study overview</em>
     <h2 className="text-light">{siteTitle}</h2>
+
+    <em className="text-light">Study overview</em>
   </header>
 )
+
+export default function myHeader(props) {
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          pmcc: file(relativePath: { eq: "pmcc_logo.png" }) {
+            childImageSharp {
+              fixed(width: 268, height: 51) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+        }
+      `}
+      render={data => <Header data={data} {...props} />}
+    />
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
@@ -23,5 +40,3 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 }
-
-export default Header

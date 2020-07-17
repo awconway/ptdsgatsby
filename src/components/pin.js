@@ -18,9 +18,9 @@ const Pin = ({ children }) => {
       // start: "top top+=15%",
       start: "center center",
 
-      end: "bottom 150px",
+      // end: "bottom 150px",
       pin: pinRef.current,
-      // pinSpacing: true,
+      // pinSpacing: false,
       // markers: true,
     })
   }, [])

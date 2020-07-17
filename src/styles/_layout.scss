@@ -1,14 +1,10 @@
-div.main {
-  min-height: 100vh;
-  padding-bottom: 60px;
-}
-
 body {
   font-family: "BioRhyme", serif;
-  // color: $color-primary;
 }
-div.full-height {
-  min-height: 100vh;
+
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 a.link-no-style {
@@ -44,25 +40,35 @@ a.link-no-style {
 header {
   background-color: $color-primary;
   color: $body-bg;
-
-  /* Set a specific height */
-  height: 400px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   line-height: 3em;
-  padding: 3em;
+  padding: 20em;
+}
+
+h2 {
+  min-height: 25vh;
+}
+
+em {
+  color: $color-primary;
 }
 
 .section {
   background-color: $color-primary;
   color: $body-bg;
+
+  /* Set a specific height */
+  height: 33vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   line-height: 3em;
   padding: 3em;
-  height: 300px;
 }
