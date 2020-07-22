@@ -18,6 +18,7 @@
     "gatsby": "^2.3.34",
     "gatsby-image": "^2.0.41",
     "gatsby-plugin-manifest": "^2.0.29",
+    "gatsby-plugin-netlify": "^2.3.11",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-react-svg": "^3.0.0",
@@ -42,7 +43,6 @@
     "typescript": "^3.9.7"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
     "prettier": "^1.17.0"
   },
   "keywords": [
@@ -53,10 +53,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop -H 0.0.0.0 -p 8000",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",
