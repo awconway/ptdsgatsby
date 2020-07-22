@@ -18,7 +18,7 @@ export default function Instructions({children}) {
                 <br />
                 <br />
 
-                <img src={Instructionsimg} alt="clarity" width={"80%"}/>
+                <img src={Instructionsimg} alt="clarity" />
 
                     <h2>
                         It was <em>very rare</em> for patients to receive separate

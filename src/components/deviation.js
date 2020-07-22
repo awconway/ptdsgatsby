@@ -15,7 +15,7 @@ export default function Deviation({ children }) {
           <hr />
           <FontAwesomeIcon   icon={["fad", "clock"]} size="6x"/>
           </div>
-        <img src={Deviationimg} alt="Plot of fasting duration for food and fluids" width={"90%"}/>
+        <img src={Deviationimg} alt="Plot of fasting duration for food and fluids"/>
 
           <h2>
             Patients were fasted on average for about{" "}

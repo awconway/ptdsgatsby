@@ -42,13 +42,13 @@ export default function Discomfort({ children }) {
                 bothered' for each item) to 10 (i.e. rated 'very bothered' for
                 each item).
               </h4>
-            <img src={Distributionimg} alt="Plot of distribution of thirst discomfort scores" width={"80%"}/>
+            <img src={Distributionimg} alt="Plot of distribution of thirst discomfort scores" />
             <div className="spacer" />
               <h2>
                 We did not observe an association between PTDS-5 and fasting
                 duration for either fluids or food.
               </h2>
-                <img src={Fastingimg} alt="Plot of association between thirst discomfort and fasting duration" width={"80%"}/>
+                <img src={Fastingimg} alt="Plot of association between thirst discomfort and fasting duration" />
               <h2>
                 This would suggest that it is important to assess thirst
                 discomfort periodically, <em>regardless</em> of the duration of fasting.
