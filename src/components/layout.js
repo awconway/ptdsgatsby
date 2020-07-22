@@ -9,7 +9,7 @@ import React from "react"
 
 import { Container, Row, Col } from "react-bootstrap"
 
-import "@fortawesome/fontawesome-svg-core/styles.css"
+// import "@fortawesome/fontawesome-svg-core/styles.css"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import {
@@ -35,21 +35,9 @@ export default function Layout({ children }) {
     <Container fluid>
       <Row noGutters>
         <Col>
-          <main>{children}</main>
+          {children}
         </Col>
       </Row>
-
-      {/* <Row noGutters>
-        <Col className="footer-col">
-          <footer>
-            <span>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
-            </span>
-          </footer>
-        </Col>
-      </Row> */}
     </Container>
   )
 }

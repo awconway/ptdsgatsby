@@ -1,7 +1,6 @@
 import React from "react"
 
 import { Row, Col } from "react-bootstrap"
-//scrollTrigger components
 import Reveal from "../components/reveal"
 
 export default function Summary({ children }) {
@@ -9,6 +8,10 @@ export default function Summary({ children }) {
     <Row noGutters className="px-2">
       <Col className="pt-5 text-center">
         <Reveal>
+          <div className={"spacer"}>
+            <h1>Summary</h1>
+            <hr/>
+          </div>
           <h2>
             Results from this study show that patients at TGH are fasted for
             periods of time that <em>far exceeded</em> recommendations for
@@ -28,6 +31,7 @@ export default function Summary({ children }) {
             clear fluids and 6-hours for food and non-clear fluids) are
             warranted.
           </h2>
+          <hr />
         </Reveal>
       </Col>
     </Row>

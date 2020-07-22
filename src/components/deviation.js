@@ -5,16 +5,21 @@ import React from "react"
 import { Row, Col } from "react-bootstrap"
 //scrollTrigger components
 import Reveal from "../components/reveal"
-import Pin from "../components/pin"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 
 export default function Deviation({ children }) {
   return (
-    <Row noGutters className="px-2">
-      <Col md={4} className="pt-5 mt-5 text-center">
+    <Row noGutters className="px-2 text-center">
+      <Col >
         <Reveal>
-          <h2></h2>
-        </Reveal>
-        <Reveal>
+          <div className="spacer" >
+
+          <h1>Fasting duration</h1>
+          <hr />
+          <FontAwesomeIcon   icon={["fad", "clock"]} size="6x"/>
+          </div>
+          <Deviationimg />
+
           <h2>
             Patients were fasted on average for about{" "}
             <b>
@@ -22,19 +27,6 @@ export default function Deviation({ children }) {
             </b>
             , with many patients fasted far longer than this.
           </h2>
-        </Reveal>
-        <Reveal>
-          <h2>
-            Fasting duration was similar regardless of the types of instructions
-            received.
-          </h2>
-        </Reveal>
-      </Col>
-      <Col md={8} className="pt-5 ">
-        <Reveal>
-          <Pin>
-            <Deviationimg />
-          </Pin>
         </Reveal>
       </Col>
     </Row>

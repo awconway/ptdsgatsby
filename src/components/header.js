@@ -2,15 +2,24 @@ import { StaticQuery, graphql, Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Img from "gatsby-image"
+import Yoyo from "./yoyo";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const Header = ({ data, siteTitle }) => (
   <header>
     <Link to="https://www.uhn.ca/PMCC">
       <Img fixed={data.pmcc.childImageSharp.fixed} />
     </Link>
-    <h2 className="text-light">{siteTitle}</h2>
+    <h2 >{siteTitle}</h2>
 
-    <em className="text-light">Study overview</em>
+      <p>Scroll down</p>
+
+      <Yoyo>
+          <FontAwesomeIcon
+              icon={["fad", "chevron-double-down"]}
+              size="2x"
+          />
+      </Yoyo>
   </header>
 )
 

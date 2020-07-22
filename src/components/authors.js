@@ -1,7 +1,7 @@
 import React from "react"
 import Table from "react-bootstrap/Table"
 const Authors = ({ children }) => (
-  <Table borderless className="font-weight-light text-sm">
+  <Table borderless className="font-weight-light text-sm spacer">
     <tr>
       <th>Author</th>
       <th>Affiliation</th>

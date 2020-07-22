@@ -6,35 +6,34 @@ import { Row, Col } from "react-bootstrap"
 //scrollTrigger components
 import Reveal from "../components/reveal"
 
-import Pin from "../components/pin"
-
 export default function ParticipantsSection({ children }) {
   return (
-    <Row noGutters className="px-2">
-      <Col md={8} className="pt-5 ">
+    <Row noGutters className="px-2 text-center">
+        <Col>
+        <div className="spacer" />
+
         <Reveal>
-          <Pin>
-            <Participants />
-          </Pin>
-        </Reveal>
-      </Col>
-      <Col md={4} className="pt-5 mt-5 text-center">
-        <Reveal>
-          <h2></h2>
-        </Reveal>
-        <Reveal>
-          <h2>
+          <h2 className={"spacer"}>
             From November 2019 to March 2020, we recruited 193 patients for the
             study.
           </h2>
         </Reveal>
+        <div className="spacer" />
+
         <Reveal>
-          <h2>
+          <h2 className={"spacer"}>
             Slightly more than half of the participants were scheduled for a
             procedure in interventional radiology
           </h2>
         </Reveal>
-      </Col>
+        <div className="spacer" />
+
+        <Reveal>
+            <Row  className={"px-2 text-left"}>
+                <Participants/>
+            </Row>
+        </Reveal>
+        </Col>
     </Row>
   )
 }

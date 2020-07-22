@@ -12,14 +12,14 @@ export default function Discomfort({ children }) {
   return (
     <Row className="px-2">
       <Col className="text-center">
-        <h2></h2>
+        <div className="spacer" />
         <Reveal>
-          <h2>
+            <h1>Thirst discomfort</h1>
+            <hr />
+            <em>
             The Perioperative Thirst Discomfort Scale was used to measure thirst
             discomfort
-          </h2>
-        </Reveal>
-        <Reveal>
+            </em>
           <p>
             Participants rated the severity of their thirst discomfort by rating
             how 'bothered' they were by the following sensations:
@@ -31,56 +31,32 @@ export default function Discomfort({ children }) {
             <ListGroup.Item>"My saliva is thick"</ListGroup.Item>
             <ListGroup.Item>"My tongue is thick" </ListGroup.Item>
           </ListGroup>
-          <p>
+          <em>
             Possible responses were 0 = 'not bothered', 1 = 'slightly bothered',
             and 3 = 'very bothered'.
-          </p>
+          </em>
         </Reveal>
-        <Row>
-          <Col md={5}>
-            <Reveal>
+        <div className="spacer" />
+        <Reveal>
               <h2>
                 Total scores for the scale can range from 0 (i.e. rated 'not
                 bothered' for each item) to 10 (i.e. rated 'very bothered' for
                 each item).
               </h2>
+          <Distributionimg />
             </Reveal>
-            <Reveal>
-              <h2>Scores in the lower range were more common</h2>
-            </Reveal>
-          </Col>
-          <Col md={7}>
-            <Reveal>
-              <Pin>
-                <Distributionimg />
-              </Pin>
-            </Reveal>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={5}>
-            <h2></h2>
+            <div className="spacer" />
             <Reveal>
               <h2>
                 We did not observe an association between PTDS-5 and fasting
-                duration for either food or fluids.
+                duration for either fluids or food.
               </h2>
-            </Reveal>
-            <Reveal>
+              <Fastingimg />
               <h2>
                 This would suggest that it is important to assess thirst
-                discomfort periodically, regardless of the duration of fasting.
+                discomfort periodically, <em>regardless</em> of the duration of fasting.
               </h2>
             </Reveal>
-          </Col>
-          <Col md={7}>
-            <Reveal>
-              <Pin>
-                <Fastingimg />
-              </Pin>
-            </Reveal>
-          </Col>
-        </Row>
       </Col>
     </Row>
   )

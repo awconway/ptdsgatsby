@@ -1,7 +1,7 @@
 import React from "react"
 
-import { Container } from "react-bootstrap"
-import { graphql } from "gatsby"
+import {graphql} from "gatsby"
+import {Row, Col} from "react-bootstrap"
 
 //Page components
 
@@ -11,13 +11,9 @@ import ParticipantsSection from "../components/participantsSection"
 import Intro from "../components/intro"
 import Deviation from "../components/deviation"
 import Instructions from "../components/instructions"
-import Clarity from "../components/clarity"
-import Section from "../components/section"
 import Discomfort from "../components/discomfort"
 import Summary from "../components/summary"
-import Footer from "../components/footer"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const query = graphql`
   query {
@@ -47,42 +43,23 @@ export const query = graphql`
   }
 `
 
-const IndexPage = ({ data }) => (
-  <Layout pageInfo={{ pageName: "index" }}>
-    <SEO title="Home" keywords={[`fasting`, `sedation`, `anesthesia`]} />
-    <Container fluid>
-      <Intro />
-      <ParticipantsSection />
-      <Section>
-        <h1>Fasting instructions</h1>
-        <FontAwesomeIcon icon={["fad", "sandwich"]} size="6x" />
-        <FontAwesomeIcon icon={["fad", "glass"]} size="6x" />
-      </Section>
-      <Instructions />
-      <Clarity />
-      <Section>
-        <h1>Fasting duration</h1>
-        <FontAwesomeIcon icon={["fad", "clock"]} size="6x" />
-      </Section>
-      <Deviation />
-      <h2></h2>
-      <Section>
-        <h1>Thirst discomfort</h1>
-      </Section>
-      <Discomfort />
-      <h2></h2>
-      <Section>
-        <h1>Summary</h1>
-        <FontAwesomeIcon icon={["fad", "clock"]} size="6x" />{" "}
-      </Section>
-      <h2></h2>
-      <Summary />
-      <h2></h2>
-      <h2></h2>
-      <h2></h2>
-      <Footer />
-    </Container>
-  </Layout>
+const IndexPage = ({data}) => (
+    <Layout pageInfo={{pageName: "index"}}>
+        <SEO title="Home" keywords={[`fasting`, `sedation`, `anesthesia`]}/>
+        <Intro/>
+        <ParticipantsSection/>
+        <div className="spacer"/>
+        <Instructions/>
+        <div className="spacer"/>
+        <Deviation/>
+        <div className="spacer"/>
+        <Discomfort/>
+        <div className="spacer"/>
+        <Summary/>
+        <div className="spacer"/>
+        <div className="spacer"/>
+        <div className="spacer"/>
+    </Layout>
 )
 
 export default IndexPage
