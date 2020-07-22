@@ -1,5 +1,4 @@
 import Header from "./header"
-import Authors from "./authors"
 import { StaticQuery, graphql, Link } from "gatsby"
 
 import React from "react"
@@ -27,11 +26,6 @@ const Intro = ({ children, pageInfo }) => (
         <Row noGutters className="text-center">
           <Col>
               <Header siteTitle={data.site.siteMetadata.title} />
-            <div className="spacer" />
-
-            <Reveal>
-              <Authors />
-            </Reveal>
             <div className="spacer" />
 
             <Reveal>

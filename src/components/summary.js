@@ -18,12 +18,16 @@ export default function Summary({ children }) {
             pre-procedure fasting in clinical guidelines.
           </h2>
         </Reveal>
+        <div className={"spacer"} />
+
         <Reveal>
           <h2>
             Thirst discomfort was common, but not associated with the duration
             of fasting.
           </h2>
         </Reveal>
+        <div className={"spacer"} />
+
         <Reveal>
           <h2>
             Initiatives to minimize the duration of pre-procedure fasting by

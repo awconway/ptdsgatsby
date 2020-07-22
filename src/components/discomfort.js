@@ -1,7 +1,6 @@
 import React from "react"
 //scrollTrigger components
 import Reveal from "../components/reveal"
-import Pin from "../components/pin"
 
 import Distributionimg from "../../static/distribution.svg"
 import Fastingimg from "../../static/fasting.svg"
