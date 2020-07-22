@@ -12,7 +12,7 @@ const Header = ({ data, siteTitle }) => (
     </Link>
     <h2 >{siteTitle}</h2>
 
-      <p>Scroll down slowly</p>
+      <p>Scroll down</p>
 
       <Yoyo>
           <FontAwesomeIcon

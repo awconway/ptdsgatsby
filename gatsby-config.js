@@ -14,7 +14,20 @@ module.exports = {
               ]}, // option to add more headers. `Link` headers are transformed by the below criteria
       }
 },
-    `gatsby-plugin-react-helmet`,
+      {
+          resolve: 'gatsby-plugin-svgr',
+          options: {
+              prettier: true,          // use prettier to format JS code output (default)
+              svgo: true,              // use svgo to optimize SVGs (default)
+              svgoConfig: {
+                  plugins: [
+                      { removeViewBox: true }, // remove viewBox when possible (default)
+                      { cleanupIDs: true },    // remove unused IDs and minify remaining IDs (default)
+                  ],
+              },
+          },
+      },
+      `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -53,13 +66,13 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /static/,
-        },
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-react-svg",
+    //   options: {
+    //     rule: {
+    //       include: /static/,
+    //     },
+    //   },
+    // },
   ],
 }

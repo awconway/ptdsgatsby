@@ -57,18 +57,3 @@ header {
 em {
   color: $color-primary;
 }
-
-.section {
-  background-color: $color-primary;
-  color: $body-bg;
-
-  /* Set a specific height */
-  height: 33vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  line-height: 3em;
-  padding: 3em;
-}
