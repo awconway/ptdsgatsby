@@ -77,7 +77,7 @@ const Intro = ({ children, pageInfo }) => (
                   placement="top"
                   trigger="click"
                   overlay={
-                    <Tooltip id="test">
+                    <Tooltip id="test" className={"ref text-center"}>
                       <Row>
                         <Col>
                           <b>
@@ -125,7 +125,7 @@ const Intro = ({ children, pageInfo }) => (
                   placement="top"
                   trigger="click"
                   overlay={
-                    <Tooltip id="test">
+                    <Tooltip id="test"  className={"ref text-center"}>
                       <Col>
                         <b>Perioperative thirst: a patient perspective</b>
                         <p>Madsen, Brosnan and Nagy</p>
