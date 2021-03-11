@@ -6,6 +6,7 @@
  */
 
 import React from "react"
+import Header from "./header"
 
 import { Container, Row, Col } from "react-bootstrap"
 
@@ -32,12 +33,15 @@ library.add(
 
 export default function Layout({ children }) {
   return (
-    <Container fluid>
-      <Row noGutters>
-        <Col>
+    <>
+    <Header />
+    <Container >
+      <Row >
+        <Col >
           {children}
         </Col>
       </Row>
     </Container>
+    </>
   )
 }
